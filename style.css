@@ -1,67 +1,71 @@
 body{
-  background-color: #001427;
-  color:white ;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 60px;
-  margin-top: 50px;
+  max-width: 900px;
+  margin: 70px auto 20px;
+  padding: 0 20px;
+  background-color: black;
 }
 @view-transition{
   navigation: auto;
 }
+.highlight{
+  color : white;
+}
 
 
 h1 {
+    text-align: center;
     font-family: "Oswald", Sans-Serif;
     font-weight:300;
-    font-size: 35px;
+    font-size: 55px;
+    color:#E0A458;
 }
 h2 {
     font-family: "Oswald", sans-serif;
     font-weight:300;
-    font-size: 35px;
+    font-size: 45px;
+    color:#E0A458;
 }
 p{
   font-family: "Poppins", sans-serif;
   font-weight:400;
-  font-size: 22px;
+  font-size: 35px;
+  color:#419D78;
+  
 }
 a{
   font-family: "Oswald", sans-serif;
-  font-size: 22px;
-  color:#B6C649 ;
+  font-size: 40px;
+  color:white;
 }
-footer p{
-    display = flex;
-    position: fixed;
-    bottom: 1px;
+footer{
+    display: flex;
     margin-bottom: 0px;
+    margin-top: 500px;
     font-size:12px;
     width: 100%;
-    text-align: centre;
+    text-align:center;
     backdrop-filter: blur(2px);
 }
 
 header{
   display: flex;
-  position: fixed;
   top: 0;
   left: 10;
   width: 100%;
-  text-align: left;
+  text-align: right;
   backdrop-filter: blur(2px);
   padding: 10px;
-  gap:25px
+  gap: 30px;
   
 }
 a:link{
-  color:#B6C649 ;
+  color:white ;
   text-decoration: none;
 }
 a:visited{
-  color:#B6C649;
+  color:white;
   text-decoration: none;
 }
 a:hover{
-  color: white;
+  color:#FFDBB5 ;
 }
