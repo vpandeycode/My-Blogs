@@ -3,7 +3,7 @@ body{
   color:white ;
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   margin-top: 50px;
 }
 @view-transition{
@@ -33,11 +33,12 @@ a{
 }
 footer p{
     display = flex;
-    bottom: 10;
+    position: fixed;
+    bottom: 1px;
+    margin-bottom: 0px;
     font-size:12px;
     width: 100%;
     text-align: centre;
-    gap:15px;
     backdrop-filter: blur(2px);
 }
 
