@@ -4,26 +4,30 @@ body{
   padding: 0 20px;
   background-color: black;
 }
-@view-transition{
-  navigation: auto;
-}
 .highlight{
   color : white;
 }
 
 
 h1 {
-    text-align: center;
-    font-family: "Oswald", Sans-Serif;
-    font-weight:300;
-    font-size: 55px;
-    color:#E0A458;
+  text-align: center;
+  font-family: "Oswald", Sans-Serif;
+  font-weight:300;
+  font-size: 55px;
+  color:#E0A458;
 }
 h2 {
-    font-family: "Oswald", sans-serif;
-    font-weight:300;
-    font-size: 45px;
-    color:#E0A458;
+  font-family: "Oswald", sans-serif;
+  font-weight:300;
+  font-size: 45px;
+  color:#E0A458;
+}
+h3{
+  font-family: "Oswald", sans-serif;
+  font-weight:300;
+  font-size: 18px;
+  color:#E0A458;
+
 }
 p{
   font-family: "Poppins", sans-serif;
@@ -32,32 +36,34 @@ p{
   color:#419D78;
   
 }
-a{
-  font-family: "Oswald", sans-serif;
-  font-size: 40px;
-  color:white;
-}
 footer{
-    display: flex;
-    margin-bottom: 0px;
-    margin-top: 500px;
-    font-size:12px;
-    width: 100%;
-    text-align:center;
-    backdrop-filter: blur(2px);
+  margin-bottom: 0px;
+  margin-top: 400px;
+  width: 100%;
+}
+footer p{
+  font-size: 20px;
 }
 
 header{
   display: flex;
-  top: 0;
-  left: 10;
-  width: 100%;
-  text-align: right;
-  backdrop-filter: blur(2px);
   padding: 10px;
   gap: 30px;
   
 }
+a {
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  color:white;
+  display: inline-block;     
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+a:hover {
+  transform: scale(1.08);
+}
+
 a:link{
   color:white ;
   text-decoration: none;
@@ -67,5 +73,45 @@ a:visited{
   text-decoration: none;
 }
 a:hover{
-  color:#FFDBB5 ;
+  color:#FFDBB5;
+}
+#tsparticles{
+    position:fixed;
+    inset:0;
+    z-index:-1;
+}
+
+header{
+    position:relative;
+    z-index:1;
+}
+
+.dot{
+    position:fixed;
+    width:3px;
+    height:3px;
+    background:#4ade80;
+    border-radius:50%;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap:15px;
+  padding: 5px;
+}
+
+.grid-item{
+  background:#474747;
+  padding: 16px;
+  text-align: center;
+  border-radius: 7%;
+  border: 1px solid;
+  border-color: #7a7a7a;
+}
+
+.grid-item img{
+  width: 250px;
+  height: 250px;
+  border-radius:7%;
+
 }
